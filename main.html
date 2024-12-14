@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-  </head>
-  <body>
-    Enter your name: <input type="text" id="fname">
-	
-	<script type="text/javascript" src="./script.js">
-	</script>
-  </body>
+    <title>Capitalize Name</title>
+</head>
+<body>
+    <label for="fname">Enter your name:</label>
+    <input type="text" id="fname" maxlength="100" placeholder="Type your name here">
+
+    <script>
+        // Function to convert input field content to uppercase
+        document.getElementById("fname").addEventListener("blur", function () {
+            this.value = this.value.toUpperCase();
+        });
+    </script>
+</body>
 </html>
